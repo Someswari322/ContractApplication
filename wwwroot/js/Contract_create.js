@@ -9,7 +9,7 @@ $(function () {
         var clientName = $('#ClientName').val();
 
         if (!contractName || !clientName) {
-            alert('Please fill in all fields.');
+            alert('Please fill contract name and client name fields.');
             return;
         }
 
