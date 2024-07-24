@@ -1,0 +1,23 @@
+﻿@model ContractApplication.Models.Contract
+
+<h2>Create Contract</h2>
+
+<form id="createForm" asp-action="Create">
+    <div>
+        <label for="ContractName">Contract Name:</label>
+        <input type="text" id="ContractName" name="ContractName" />
+    </div>
+    <div>
+        <label for="ClientName">Client Name:</label>
+        <input type="text" id="ClientName" name="ClientName" />
+    </div>
+    
+    <!-- Add more fields as needed -->
+    <div>
+        <button type="button" id="createButton">Create</button>
+    </div>
+</form>
+
+@section Scripts {
+    <script src="~/js/Contract_create.js"></script> <!-- Include your JavaScript file -->
+}

@@ -1,0 +1,25 @@
+﻿@model ContractApplication.Models.Contract
+<!-- Views/Contract/Edit.cshtml -->
+@* @model ContractManagementApp.Models.Contract
+ *@
+<h2>Edit Contract</h2>
+
+<form id="editForm">
+    <input type="hidden" id="PartitionKey" value="@Model.PartitionKey" />
+    <input type="hidden" id="RowKey" value="@Model.RowKey" />
+    <div>
+        <label for="ContractName">Contract Name:</label>
+        <input type="text" id="ContractName" name="ContractName" value="@Model.ContractName" />
+    </div>
+    <div>
+        <label for="ClientName">Client Name:</label>
+        <input type="text" id="ClientName" name="ClientName" value="@Model.ClientName" />
+    </div>
+    <div>
+        <button type="button" id="editButton">Save</button>
+    </div>
+</form>
+
+@section Scripts {
+    <script src="~/js/Contract_edit.js"></script>
+}
